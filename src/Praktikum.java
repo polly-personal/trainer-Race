@@ -128,7 +128,7 @@ public class Praktikum {
         double maxSpeed = Double.parseDouble(carProperties.maxSpeed);
         float acceleration = (float) carProperties.acceleration; // почему здесь испол float?
         int score = carProperties.initialScore;
-        Integer nitroLevel = carProperties.nitroLevel;
+        Integer nitroLevel = getNitroLevel(carProperties.nitroLevel);
 
         return new Car( // Метод возвращает экземпляр класса Car
                 maxSpeed,
